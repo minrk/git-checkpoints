@@ -23,7 +23,7 @@ class GitCheckpoints(FileCheckpoints):
         help="The limit of how many checkpoints to show for a file."
     )
     create_commits = Bool(True, config=True,
-        help="Whether creating checkpoints makes commits or just"
+        help="Whether creating checkpoints makes commits or just adds to the staging area."
     )
     
     def _in_git(self, path):
